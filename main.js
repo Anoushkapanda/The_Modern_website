@@ -1,5 +1,5 @@
 // Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const scrollUpButton = document.getElementById('scrollUpButton');
 
     // Show the button when the user scrolls down 100px
@@ -20,44 +20,43 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     // navbar.classList.toggle('scrolling', window.scrollY > 0);
-    if (window.scrollY > 30){                        // 50px
+    if (window.scrollY > 30) {                        // 50px
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
 });
 
- //Scrolls to an element with header offset
-   
- const scrollto = (el) => {
+//Scrolls to an element with header offset
+
+const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
 
     let elementPos = select(el).offsetTop
     window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
+        top: elementPos - offset,
+        behavior: 'smooth'
     })
-  }
+}
 
 // to control speed of autosliding carousel
 
 const myCarousel = document.querySelector('#carouselExampleIndicators');
 const carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 3000, // Time in milliseconds between slides
-  ride: 'carousel'
+    interval: 3000, // Time in milliseconds between slides
+    ride: 'carousel'
 });
 
 // for testimonial section
 
 const testimonialCarousel = document.querySelector('#testimonialCarousel');
 const testimonialCarouselInstance = new bootstrap.Carousel(testimonialCarousel, {
-  interval: 10000, // Time in milliseconds between slides for testimonials
-  ride: 'carousel'
+    interval: 10000, // Time in milliseconds between slides for testimonials
+    ride: 'carousel'
 });
 
 
@@ -86,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // to display the hidden text
 
 // scripts.js
-document.getElementById('booking-form').addEventListener('submit', function(event) {
+document.getElementById('booking-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the form from submitting and the page from reloading
 
     const isFormValid = this.checkValidity();
