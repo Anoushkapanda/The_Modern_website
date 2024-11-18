@@ -1,3 +1,26 @@
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollUpButton = document.getElementById('scrollUpButton');
+
+    // Show the button when the user scrolls down 100px
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) { // If scrolled more than 100px
+            scrollUpButton.style.display = "block";
+        } else {
+            scrollUpButton.style.display = "none";
+        }
+    });
+
+    // Scroll to the top when the button is clicked
+    scrollUpButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Smooth scrolling effect
+        });
+    });
+});
+
+
 document.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     // navbar.classList.toggle('scrolling', window.scrollY > 0);
@@ -82,3 +105,5 @@ document.getElementById('booking-form').addEventListener('submit', function(even
         alert('Please fill in all required fields.');
     }
 });
+
+
