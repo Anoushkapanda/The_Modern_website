@@ -33,7 +33,6 @@
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
-  /* font-style: italic; */
   padding: 0 50px;
   margin-left: auto;
   margin-right: auto;
@@ -80,17 +79,15 @@
 /* =================== navbar ====================== */
 
 #header .navbar {
-  position: fixed; /*fixes navbar at top*/
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Makes the navbar span the entire width of the page */
+  width: 100%; 
   display: flex;
-  justify-content: space-between; /* Distributes space between logo and nav links */
+  justify-content: space-between; 
   align-items: center;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.132);
-  z-index: 1000; /* Ensures the navbar stays on top of other content */
-  /* transition: background-color 0.5s ease, padding 0.3s ease; */
 }
 
 #header .scrolled {
@@ -134,32 +131,24 @@
 }
 
 /* Change the color of the toggle button icon */
+/* not working properly */
 #header .mobile-nav-toggle {
-  color: #f2c641 !important; /* Replace with your desired color */
+  color: #f2c641 !important;
 }
 
-/* Change color on hover */
 .mobile-nav-toggle:hover {
-  color: #dabf37 !important; /* A slightly darker shade or any color you prefer */
+  color: #dabf37 !important; 
 }
-
-
-/* #header .mobile-icon {
-  color: #152238;
-} */
 
 @media (max-width:1024px) {
   #header .btn {
     margin-right: 20px;
   }
-
-
 }
 
 /* =================== hero section ====================== */
 
 #hero {
-  /* background-image: url(images/hero-bg.jfif); */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("images/hero-bg-two.jpeg");
   background-size: cover;
@@ -184,12 +173,6 @@
   color: beige;
   font-family: "Pacifico", sans-serif;
 }
-
-/* .hero-section-info h1 span {
-  font-family: "Pacifico", cursive;
-  /* font-weight: bold;
-  font-size: 60px; */
-/*} */
 
 .hero-section-info p {
   font-family: "Qwitcher Grypen", cursive;
@@ -219,12 +202,12 @@
 
 @media (max-width: 1024px) {
   #hero .hero-section-info {
-    text-align: center; /* Center align text */
-    left: 50%; /* Keep horizontally centered */
+    text-align: center;
+    left: 50%;
     transform: translateX(
       -50%
-    ); /* Adjust translation to keep centered horizontally */
-    width: 100%; /* Allow the text to center align within full width */
+    ); 
+    width: 100%; 
     padding: 0 20px;
   }
 
@@ -253,12 +236,12 @@
 
 @media (max-width: 768px) {
   .hero-section-info h1 {
-    font-size: 30px; /* Smaller font size for smaller screens */
+    font-size: 30px; 
     line-height: 36px;
   }
 
   .hero-section-info p {
-    font-size: 20px; /* Smaller font size for smaller screens */
+    font-size: 20px; 
   }
 }
 
@@ -295,52 +278,50 @@
 .about-text h3 {
   font-family: "Pacifico", cursive;
   padding-bottom: 20px;
-  /* font-size: 2.5vw; */
   font-size: 32px;
 }
 
 .about-text p {
   font-family: "Montserrat", sans-serif;
-  /* font-size: 1.25vw; */
   font-size: 16px;
 }
 
 .about-img {
   flex: 1;
-  max-width: 50%; /* Ensures the image does not exceed half the container width */
+  max-width: 50%; 
   border: 2px solid rgba(218, 216, 216, 0.877);
   box-sizing: border-box;
 }
 
 .about-img:hover {
-  transform: scale(1.05); /* Scales the image up by 5% on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect for a more pronounced hover effect */
+  transform: scale(1.05); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
   transition: 0.5s ease-in-out;
 }
 
 .about-img img {
   width: 100%;
   height: 500px;
-  border-radius: 10px; /* Optional: Adds rounded corners to the images */
+  border-radius: 10px;
 }
 
 @media (max-width: 1024px) {
   #about .about-container {
-    flex-direction: column; /* Change the layout to vertical */
-    gap: 20px; /* Remove gap between items */
+    flex-direction: column;
+    gap: 20px; 
   }
 
   #about .about-text {
-    flex: 1; /* Allow text to grow and shrink as needed */
+    flex: 1; 
   }
   #about .about-text h3 {
-    margin-bottom: 10px; /* Add margin to separate title and text */
+    margin-bottom: 10px;
   }
   #about .about-img {
     max-width: 100%;
     width: 80%;
     height: auto; 
-    margin: 0 20px; /* Add margin to separate images */
+    margin: 0 20px;
   }
 
   .about-text h3 {
@@ -353,6 +334,7 @@
     padding: 0 10px;
   }
 }
+
 @media (max-width: 1025px) {
   #about .about-img {
     height: 300px;
@@ -361,9 +343,9 @@
 
 @media (max-width: 500px) {
   .about-img img {
-    width: 300px; /* Sets a specific width */
-    height: 250px; /* Sets a specific height */
-    object-fit: cover; /* Ensures the image scales properly without distortion */
+    width: 300px; 
+    height: 250px;
+    object-fit: cover; 
   }
 
   .about-text h3 {
@@ -380,30 +362,30 @@
 #why-us {
   background-color: #e6d3b0;
   color: #152238;
-  margin-bottom: 0; /* Remove margin to avoid the gap */
+  margin-bottom: 0;
 }
 
 .why-us-reasons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start; /* Aligns items to the top */
-  margin: 0 auto; /* Center horizontally with auto margins */
-  gap: 20px; /* Space between items */
-  max-width: 1200px; /* Adjust based on your layout */
-  padding: 0 50px; /* Add horizontal padding if needed */
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 0 50px;
 }
 
 .reasons {
-  flex: 1; /* Allows items to grow and shrink as needed */
-  min-width: 300px; /* Minimum width to prevent items from becoming too small */
-  padding: 30px; /* Add padding inside each reason */
+  flex: 1;
+  min-width: 300px;
+  padding: 30px; 
   margin-bottom: 40px;
-  box-sizing: border-box; /* Include padding in width */
-  background-color: #152238; /* Initial background color */
-  color: #e6d3b0; /* Initial text color */
+  box-sizing: border-box;
+  background-color: #152238;
+  color: #e6d3b0;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
-    transform 1s ease-in-out; /* Smooth transition for background color, text color, and transform */
+    transform 1s ease-in-out;
 }
 
 .reasons:hover .reasons-text {
@@ -416,7 +398,7 @@
 }
 
 .reasons-text {
-  transition: transform 1s ease-in-out; /* Smooth transition for transform */
+  transition: transform 1s ease-in-out;
 }
 
 .reasons span {
@@ -520,11 +502,11 @@
   display: flex;
   align-items: center;
   padding: 20px 50px;
-  border-bottom: 1px solid #333; /* Separator line between menu items */
+  border-bottom: 1px solid #333;
 }
 
 .menu-dish img {
-  border-radius: 50%; /* Circular image */
+  border-radius: 50%;
   width: 70px;
   height: 70px;
   object-fit: cover;
@@ -533,7 +515,7 @@
 }
 
 .menu-dish-details {
-  flex: 1; /* Ensures the content takes up the remaining space */
+  flex: 1;
   padding-top: 7px;
 }
 
@@ -542,7 +524,7 @@
   align-items: center;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 5px; /* Space between the name and the description */
+  margin-bottom: 5px;
   position: relative;
 }
 
@@ -550,7 +532,7 @@
   font-size: 18px;
   font-weight: 700;
   margin: 0;
-  flex-shrink: 0; /* Prevents the dish name from shrinking */
+  flex-shrink: 0;
 }
 
 .menu-dish-name h4:hover {
@@ -563,18 +545,18 @@
 }
 
 .dots {
-  flex-grow: 1; /* Allows the dots to take up the remaining space */
-  border-bottom: 1px dotted #fff; /* Dotted line */
-  margin: 0 10px; /* Space between the line and text */
-  height: 0; /* Makes sure the line aligns correctly */
-  display: block; /* Ensures it acts as a separator */
+  flex-grow: 1;
+  border-bottom: 1px dotted #fff;
+  margin: 0 10px;
+  height: 0;
+  display: block;
 }
 
 .price {
   font-size: 16px;
-  color: #f4b742; /* Price color */
-  flex-shrink: 0; /* Prevents the price from shrinking */
-  white-space: nowrap; /* Ensures the price stays on one line */
+  color: #f4b742;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .menu-menu {
@@ -582,23 +564,23 @@
   justify-content: space-between;
   padding: 20px;
   max-width: 1200px;
-  margin: 0 auto; /* Center the container */
+  margin: 0 auto;
 }
 
 .menu-column {
-  flex: 1; /* Each column takes up equal space */
-  padding: 0 20px; /* Add some padding between the columns */
+  flex: 1;
+  padding: 0 20px;
 }
 
 .menu-section {
-  display: none; /* Hide all sections by default */
-  opacity: 0; /* Ensure sections start out hidden */
-  transition: opacity 2s ease-in-out; /* Smooth transition for opacity */
+  display: none;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
 }
 
 .menu-section.active {
-  display: block; /* Show the active section */
-  opacity: 1; /* Fade in the active section */
+  display: block;
+  opacity: 1;
 }
 
 @media (max-width: 1024px) {
@@ -617,13 +599,13 @@
 
 @media (max-width: 800px) {
   .menu-menu {
-    flex-direction: column; /* Change to a single-column layout */
-    align-items: center; /* Center align items */
+    flex-direction: column;
+    align-items: center;
   }
 
   .menu-column {
-    width: 100%; /* Make columns full-width */
-    margin-bottom: 20px; /* Add spacing between columns */
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .menu-dish-name h4 {
@@ -699,8 +681,8 @@
 }
 
 .specials-content:hover {
-  transform: scale(1.05); /* Zooms in the box */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Changes the box shadow */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .specials-content:hover h4 {
@@ -709,7 +691,7 @@
 }
 
 .specials-image {
-  margin-bottom: 20px; /* Remove margin from the image container */
+  margin-bottom: 20px;
 }
 
 .specials-image img {
@@ -802,21 +784,20 @@
 }
 
 .event-images {
-  overflow: hidden; /* Prevents the image from being cut off */
+  overflow: hidden;
   padding-right: 30px;
 }
 
 .event-images img {
   width: 400px;
   height: 400px;
-  /* object-fit: cover; */
   padding-right: 30px;
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  transition: transform 0.3s ease-in-out;
 }
 
 .event-images img:hover {
-  transform: scale(1.05); /* Zooms in the image */
+  transform: scale(1.05);
 }
 
 .event-descriptions {
@@ -830,7 +811,7 @@
 }
 
 .event-descriptions h3:hover {
-  color: #ff7f50; /* Highlight the hovered event */
+  color: #ff7f50;
   transition: 0.3s ease-in-out;
 }
 
@@ -911,39 +892,38 @@
 
 /* ===== carousel controls design ===== */
 
-/* Style the indicators to be circular */
 .carousel-indicators button {
   width: 30px;
   height: 30px;
-  background-color: #000; /* Change color as per your design */
-  border-radius: 50%; /* Make them circular */
-  border: 1px solid #fff; /* Add a white border for visibility */
+  background-color: #000;
+  border-radius: 50%;
+  border: 1px solid #fff;
   margin: 5px;
-  opacity: 0.7; /* Slight transparency */
-  transition: opacity 0.3s ease; /* Smooth transition */
+  opacity: 0.7;
+  transition: opacity 0.3s ease; 
 }
 
 .carousel-indicators button.active {
-  background-color: #ff7f50; /* Highlight the active indicator */
-  opacity: 1; /* Fully opaque */
+  background-color: #ff7f50;
+  opacity: 1;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5); /* Makes the icon background visible */
-  border-radius: 50%; /* Round buttons */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%; 
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  z-index: 5; /* Ensure the buttons are above other content */
+  z-index: 5;
 }
 
 .carousel-control-prev,
 .carousel-control-next,
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: brightness(100%); /* Ensure icons are not dimmed */
+  filter: brightness(100%);
 }
 
 /* =================== book a table section ====================== */
@@ -993,8 +973,8 @@
 
 .booking-form-contents input:focus,
 .booking-msg-area textarea:focus {
-  border: 2px solid #d9a325; /* A darker shade of #f4b742 */
-  outline: none; /* Remove the default outline */
+  border: 2px solid #d9a325;
+  outline: none;
 }
 
 .booking-button button {
@@ -1004,7 +984,6 @@
   top: 90%;
   left: 45%;
   transform: translateY(-50%);
-  /* margin: 20px 0 0 500px; */
   padding: 10px;
   background-color: #f4b742;
   color: #fff;
@@ -1015,7 +994,7 @@
 }
 
 .booking-button button:hover {
-  background-color: #d9a325; /* A lighter shade of #f4b742 */
+  background-color: #d9a325;
 }
 
 #confirmation-message {
@@ -1052,10 +1031,6 @@
     font-size: 12px;
   }
 
-  /* .booking-form-contents input {
-    height: 30px !important;
-  } */
-
   .booking-msg-area textarea {
     margin-top: 20px;
   }
@@ -1078,8 +1053,6 @@
   padding: 30px 70px;
 }
 
-/* Container for the testimonial */
-/* Testimonial box styling */
 .testimonial-item {
   background-color: #333;
   padding: 20px;
@@ -1089,13 +1062,6 @@
   margin-bottom: 130px;
 }
 
-/* .testimonial-item:hover {
-  box-shadow: #999;
-  transform: scale(1.0); 
-  transition: .3s ease-in-out;
-} */
-
-/* Quote styling */
 .quote {
   font-size: 15px;
   font-style: italic;
@@ -1103,7 +1069,6 @@
   margin-bottom: 20px;
 }
 
-/* Author image styling */
 .author-image {
   width: 100px;
   height: 100px;
@@ -1112,14 +1077,13 @@
   position: absolute;
   left: 30%;
   transform: translateX(-50%);
-  bottom: -40px; /* Adjust this value to overlap the testimonial box */
+  bottom: -40px;
   background-color: #fff;
 }
 
-/* Author details container styling */
 .testimonial-author {
-  padding-top: 40px; /* Space to push down the author details */
-  margin-top: 40px; /* Ensure there's space above for the image overlap */
+  padding-top: 40px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -1127,14 +1091,13 @@
   position: absolute;
   left: 30%;
   transform: translateX(-50%);
-  bottom: -80px; /* Position the author details below the author image */
+  bottom: -80px;
 }
 
-/* Author name and role styling */
 .author-name {
   font-size: 18px;
   font-weight: bold;
-  margin-top: 10px; /* Ensure there's space above for the image overlap */
+  margin-top: 10px;
 }
 
 .author-role {
@@ -1197,7 +1160,7 @@
   padding: 0px 20px;
   text-align: center;
   border: 1px solid #e1b35e;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*to give the illusion that the image is a lil above the page*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #e3c998;
 }
 
@@ -1292,7 +1255,7 @@
 }
 
 .gallery-grid-item:hover img {
-  transform: scale(1.1); /* Zoom out effect */
+  transform: scale(1.1);
 }
 
 .gallery-grid-item .overlay {
@@ -1301,7 +1264,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Translucent cover */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1326,14 +1289,14 @@
 }
 
 .lightboxOverlay {
-  background: rgba(0, 0, 0, 0.85) !important; /* Translucent background */
+  background: rgba(0, 0, 0, 0.85) !important;
 }
 
 .lightbox .lb-close {
   top: 10px;
   right: 10px;
-  background-color: #fff; /* Background for close button */
-  color: #000; /* Color for close button */
+  background-color: #fff;
+  color: #000;
   border-radius: 50%;
   padding: 5px 10px;
   font-size: 18px;
@@ -1341,110 +1304,80 @@
   position: absolute;
 }
 
-/* Lightbox Image Adjustments */
 .lightbox .lb-image {
-  max-width: 80%; /* Adjust to make images slightly smaller */
-  max-height: 80%; /* Maintain aspect ratio and reduce image size */
+  max-width: 80%;
+  max-height: 80%;
   margin: auto;
   display: block;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Optional: Adjust the close button styling */
 .lightbox .lb-close:hover {
-  background-color: #000; /* Change to black when hovering */
-  color: #fff; /* Change to white when hovering */
+  background-color: #000; 
+  color: #fff;
 }
 
 /* Positioning specific grid items to create the layout */
 
 .gallery-grid-item:nth-child(1) {
-  grid-column: span 2; /* spans 4 columns */
-  grid-row: span 2; /* spans 2 rows */
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .gallery-grid-item:nth-child(2) {
-  grid-column: span 2; /* spans 4 columns */
-  grid-row: span 1.6; /* spans 2 rows */
+  grid-column: span 2;
+  grid-row: span 1.6;
 }
 
 .gallery-grid-item:nth-child(3) {
-  grid-column: span 2; /* spans 4 columns */
-  grid-row: span 2; /* spans 2 rows */
+  grid-column: span 2;
+  grid-row: span 2;
 }
+
 .gallery-grid-item:nth-child(4) {
-  grid-column: span 2; /* spans 4 columns */
-  grid-row: span 3; /* spans 2 rows */
+  grid-column: span 2;
+  grid-row: span 3;
 }
 
 .gallery-grid-item:nth-child(5) {
-  grid-column: span 2; /* spans 2 columns */
-  grid-row: span 4; /* spans 1 row */
+  grid-column: span 2;
+  grid-row: span 4;
 }
 
 .gallery-grid-item:nth-child(6) {
-  grid-column: span 2; /* spans 2 columns */
-  grid-row: span 3; /* spans 1 row */
+  grid-column: span 2;
+  grid-row: span 3;
 }
 
 .gallery-grid-item:nth-child(7) {
-  grid-column: span 2; /* spans 2 columns */
-  grid-row: span 3; /* spans 2 rows */
+  grid-column: span 2;
+  grid-row: span 3;
 }
 
 .gallery-grid-item:nth-child(8) {
-  grid-column: span 2; /* spans 4 columns */
-  grid-row: span 2; /* spans 1 row */
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .gallery-grid-item:nth-child(9) {
-  grid-column: span 2; /* spans 2 columns */
-  grid-row: span 1; /* spans 1 row */
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 .gallery-grid-item:nth-child(10) {
-  grid-column: span 2; /* spans 2 columns */
-  grid-row: span 1; /* spans 1 row */
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 .gallery-grid-item:nth-child(11) {
-  grid-column: span 2; /* spans 2 columns */
-  grid-row: span 2; /* spans 1 row */
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .gallery-grid-item:nth-child(12) {
-  grid-column: span 2; /* spans 2 columns */
-  grid-row: span 1; /* spans 1 row */
+  grid-column: span 2;
+  grid-row: span 1;
 }
-
-/* .gallery-img-4 img {
-  height: 550px;
-}
-
-.gallery-img-5 img {
-  height: 100%;
-}
-
-.gallery-img-6 img {
-  height: 100%;
-}
-
-.gallery-img-7 img {
-  height: 640px;
-}
-
-.gallery-img-8 img {
-  height: 455px;
-}
-
-.gallery-img-10 img {
-  height: 100%;
-}
-
-.gallery-img-11 img,
-.gallery-img-12 img {
-  height: 270px;
-} */
 
 .gallery-main-area img {
   height: 100%;
@@ -1470,7 +1403,6 @@
 
 .contact-information {
   width: 45%;
-  /* padding-left: 50px; */
 }
 
 .contact-info {
@@ -1481,8 +1413,8 @@
 }
 
 .contact-icon i {
-  color: #152238; /* Matching the text color */
-  border: 1px solid #152238; /* Matching the border color */
+  color: #152238;
+  border: 1px solid #152238; 
   padding: 15px;
   border-radius: 50%;
   font-size: 20px;
@@ -1493,7 +1425,7 @@
 }
 
 .contact-icon i:hover {
-  background-color: #e3c379; /* A lighter shade of #f2c641 */
+  background-color: #e3c379;
   color: #fff;
   transition: 0.3s ease-in-out;
 }
@@ -1518,26 +1450,26 @@
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%; /* Take up the full width */
-  color: #f2c641; /* Matching the text color */
-  border: 1px solid #f2c641; /* Matching the border color */
+  width: 100%;
+  color: #f2c641;
+  border: 1px solid #f2c641;
   padding: 10px;
-  margin-bottom: 20px; /* Space between inputs */
+  margin-bottom: 20px;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form button:focus {
   outline: none !important;
-  box-shadow: none !important; /* Ensures no shadow (including blue glow) */
-  border: 2px solid #d9a325 !important; /* Custom border color */
+  box-shadow: none !important;
+  border: 2px solid #d9a325 !important;
 }
 
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
-  outline: none; /* Ensures there's no outline on focus */
-  box-shadow: none; /* Removes the default blue shadow */
+  outline: none;
+  box-shadow: none;
 }
 
 .contact-form .form-group-inline {
@@ -1562,7 +1494,7 @@ button.contact-btn {
 }
 
 button.contact-btn:hover {
-  background-color: #dabf37; /* Slightly darker shade on hover */
+  background-color: #dabf37;
   color: #fff;
   transition: 0.3s ease-in-out;
 }
@@ -1692,12 +1624,12 @@ footer a {
 }
 
 .our-newsletter .form-control {
-  flex: 1; /* Make the input take up all available space */
+  flex: 1;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  padding-right: 100px; /* Ensure the text doesn't go under the button */
+  padding-right: 100px;
 }
 
 .our-newsletter .btn {
@@ -1706,10 +1638,8 @@ footer a {
   right: 0;
   height: 37.5px;
   border-radius: 25px;
-  /* border-top-left-radius: 0;
-    border-bottom-left-radius: 0; */
-  padding: 0 20px; /* Ensure the button is wide enough */
-  z-index: 2; /* Make sure it is on top */
+  padding: 0 20px;
+  z-index: 2;
 }
 
 #footer .copyright {
@@ -1771,4 +1701,3 @@ footer a {
     font-size: 11px;
   }
 }
-
