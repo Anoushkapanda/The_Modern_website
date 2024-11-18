@@ -13,11 +13,11 @@
 
 .main-heading i {
   padding: 0 10px;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .main-heading h3 {
-  font-size: 25px;
+  font-size: 1.5 px;
   font-family: "Qwitcher Grypen", cursive;
   font-weight: 700;
 }
@@ -82,16 +82,18 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
+  z-index: 1000;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.132);
 }
 
 #header .scrolled {
-  background-color: rgba(0, 0, 0, 0.21); /* Darker background when scrolled */
+  background-color: rgba(0, 0, 0, 0.21);
+  /* Darker background when scrolled */
   transition: 1s ease-in-out;
 }
 
@@ -101,7 +103,7 @@
 
 #header .nav-link {
   color: white;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
   transition: color 0.3s ease;
 }
@@ -116,7 +118,7 @@
   font-weight: bold;
   text-decoration: none !important;
   color: white;
-  font-size: 50px;
+  font-size: 3.1rem;
   font-family: "Qwitcher Grypen", cursive;
 }
 
@@ -125,7 +127,7 @@
 }
 
 #header .collapse a {
-  font-size: 15px;
+  font-size: .9rem;
   padding-left: 30px;
   padding-bottom: 5px;
 }
@@ -137,7 +139,7 @@
 }
 
 .mobile-nav-toggle:hover {
-  color: #dabf37 !important; 
+  color: #dabf37 !important;
 }
 
 @media (max-width:1024px) {
@@ -176,7 +178,7 @@
 
 .hero-section-info p {
   font-family: "Qwitcher Grypen", cursive;
-  font-size: 30px;
+  font-size: 1.9rem;
   color: rgb(244, 244, 181);
 }
 
@@ -204,44 +206,41 @@
   #hero .hero-section-info {
     text-align: center;
     left: 50%;
-    transform: translateX(
-      -50%
-    ); 
-    width: 100%; 
+    transform: translateX(-50%);
+    width: 100%;
     padding: 0 20px;
   }
 
   .hero-section-info h1 {
-    font-size: 35px; /* Smaller font size for smaller screens */
+    font-size: 2.2rem;
     line-height: 36px;
   }
 
   .hero-section-info p {
-    font-size: 25px; /* Smaller font size for smaller screens */
+    font-size: 1.6rem;
   }
 
   #hero .hero-btns {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    flex-direction: row; /* Keep buttons side by side */
-    gap: 20px; /* Space between buttons */
-    margin: 20px 10px 0 10px; /* Margin for spacing above buttons */
-    /* width: 300px; */
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px 10px 0 10px;
   }
 
   #hero .hero-btns a {
-    font-size: 14px;
+    font-size: .9rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero-section-info h1 {
-    font-size: 30px; 
+    font-size: 1.9rem;
     line-height: 36px;
   }
 
   .hero-section-info p {
-    font-size: 20px; 
+    font-size: 1.25rem;
   }
 }
 
@@ -278,24 +277,24 @@
 .about-text h3 {
   font-family: "Pacifico", cursive;
   padding-bottom: 20px;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .about-text p {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .about-img {
   flex: 1;
-  max-width: 50%; 
+  max-width: 50%;
   border: 2px solid rgba(218, 216, 216, 0.877);
   box-sizing: border-box;
 }
 
 .about-img:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: 0.5s ease-in-out;
 }
 
@@ -308,29 +307,31 @@
 @media (max-width: 1024px) {
   #about .about-container {
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
   }
 
   #about .about-text {
-    flex: 1; 
+    flex: 1;
   }
+
   #about .about-text h3 {
     margin-bottom: 10px;
   }
+
   #about .about-img {
     max-width: 100%;
     width: 80%;
-    height: auto; 
+    height: auto;
     margin: 0 20px;
   }
 
   .about-text h3 {
-    font-size: 30px;
+    font-size: 1.9rem;
     text-align: center;
   }
 
   .about-text p {
-    font-size: 15px;
+    font-size: .9rem;
     padding: 0 10px;
   }
 }
@@ -343,17 +344,17 @@
 
 @media (max-width: 500px) {
   .about-img img {
-    width: 300px; 
+    width: 300px;
     height: 250px;
-    object-fit: cover; 
+    object-fit: cover;
   }
 
   .about-text h3 {
-    font-size: 25px;
+    font-size: 1.6rem;
   }
 
   .about-text p {
-    font-size: 13px;
+    font-size: .8rem;
   }
 }
 
@@ -379,7 +380,7 @@
 .reasons {
   flex: 1;
   min-width: 300px;
-  padding: 30px; 
+  padding: 30px;
   margin-bottom: 40px;
   box-sizing: border-box;
   background-color: #152238;
@@ -404,60 +405,60 @@
 .reasons span {
   display: inline-block;
   padding: 15px 0;
-  font-size: 23px;
+  font-size: 1.4rem;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 
 .reasons h3 {
   padding-bottom: 15px;
-  font-size: 25px;
+  font-size: 1.6rem;
 }
 
 .reasons p {
-  font-size: 15px;
+  font-size: .9rem;
 }
 
 @media (max-width: 1024px) {
   .reasons-text span {
-    font-size: 22px;
+    font-size: 1.4rem;
   }
 
   .reasons-text h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .reasons-text p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 770px) {
   .reasons-text span {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .reasons-text h3 {
-    font-size: 22px;
+    font-size: 1.3rem;
   }
 
   .reasons-text p {
-    font-size: 14.5px;
+    font-size: .85rem;
   }
 
 }
 
 @media (max-width: 500px) {
   .reasons-text span {
-    font-size: 18px;
+    font-size: 1.13rem;
   }
 
   .reasons-text h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .reasons-text p {
-    font-size: 14px;
+    font-size: .8rem;
   }
 
   .why-us-reasons {
@@ -522,14 +523,14 @@
 .menu-dish-name {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: bold;
   margin-bottom: 5px;
   position: relative;
 }
 
 .menu-dish-name h4 {
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 700;
   margin: 0;
   flex-shrink: 0;
@@ -541,7 +542,7 @@
 }
 
 .menu-dish-ingredients p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .dots {
@@ -553,7 +554,7 @@
 }
 
 .price {
-  font-size: 16px;
+  font-size: 1rem;
   color: #f4b742;
   flex-shrink: 0;
   white-space: nowrap;
@@ -585,15 +586,15 @@
 
 @media (max-width: 1024px) {
   .menu-dish-name h4 {
-    font-size: 17px;
+    font-size: 1.06rem;
   }
 
   .menu-dish-ingredients p {
-    font-size: 15px;
+    font-size: .9rem;
   }
 
   .price {
-    font-size: 15px;
+    font-size: .9rem;
   }
 }
 
@@ -609,15 +610,15 @@
   }
 
   .menu-dish-name h4 {
-    font-size: 16px;
+    font-size: .9rem;
   }
 
   .menu-dish-ingredients p {
-    font-size: 14px;
+    font-size: .75rem;
   }
 
   .price {
-    font-size: 14px;
+    font-size: .8rem;
   }
 
   .menu-dish img {
@@ -636,19 +637,19 @@
   }
 
   .menu-list a {
-    font-size: 14px;
+    font-size: .87rem;
   }
 
   .menu-dish-name h4 {
-    font-size: 15px;
+    font-size: .9rem;
   }
 
   .menu-dish-ingredients p {
-    font-size: 13px;
+    font-size: .8rem;
   }
 
   .price {
-    font-size: 13px;
+    font-size: .8rem;
   }
 }
 
@@ -704,12 +705,12 @@
 }
 
 .special-dish-description h4 {
-  font-size: 21px;
+  font-size: 1.3rem;
   font-weight: 650;
 }
 
 .special-dish-description p {
-  font-size: 15px;
+  font-size: .9rem;
 }
 
 @media (max-width: 1024px) {
@@ -724,11 +725,11 @@
   }
 
   .special-dish-description h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .special-dish-description p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -742,11 +743,11 @@
   }
 
   .special-dish-description h4 {
-    font-size: 19px;
+    font-size: 1.2rem;
   }
-  
+
   .special-dish-description p {
-    font-size: 14px;
+    font-size: .84rem;
   }
 }
 
@@ -758,11 +759,11 @@
   }
 
   .special-dish-description h4 {
-    font-size: 19px;
+    font-size: 1.2rem;
   }
 
   .special-dish-description p {
-    font-size: 13px;
+    font-size: .8rem;
   }
 }
 
@@ -860,7 +861,7 @@
     font-size: 1.2em;
     color: #ff7f50;
   }
-  
+
   .event-descriptions p {
     font-size: 0.8em;
   }
@@ -900,7 +901,7 @@
   border: 1px solid #fff;
   margin: 5px;
   opacity: 0.7;
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.3s ease;
 }
 
 .carousel-indicators button.active {
@@ -911,7 +912,7 @@
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 .carousel-control-prev,
@@ -1005,13 +1006,14 @@
   color: #155724;
   border: 1px solid #c3e6cb;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 @media (max-width: 1024px) {
+
   .booking-form-contents input,
   .booking-msg-area textarea {
-    font-size: 14px;
+    font-size: .87rem;
   }
 }
 
@@ -1026,17 +1028,18 @@
 }
 
 @media (max-width: 500px) {
+
   .booking-form-contents input,
   .booking-msg-area textarea {
-    font-size: 12px;
+    font-size: .75rem;
   }
 
   .booking-msg-area textarea {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
   .booking-button button {
-    font-size: 13px;
+    font-size: .8rem;
     top: 91%;
     left: 30%;
   }
@@ -1063,7 +1066,7 @@
 }
 
 .quote {
-  font-size: 15px;
+  font-size: .9rem;
   font-style: italic;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -1095,13 +1098,13 @@
 }
 
 .author-name {
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: bold;
   margin-top: 10px;
 }
 
 .author-role {
-  font-size: 14px;
+  font-size: .87rem;
   color: #aaa;
 }
 
@@ -1121,17 +1124,17 @@
   }
 
   .testimonial-item p {
-    font-size: 15px;
+    font-size: .9rem;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .testimonial-item p {
-    font-size: 12px;
+    font-size: .75rem;
   }
 
   .testimonial-item h4 {
-    font-size: 13px;
+    font-size: .8rem;
   }
 
   .author-image {
@@ -1176,12 +1179,12 @@
 }
 
 .chef-details-text h4 {
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: 650;
 }
 
 .chef-details-text p {
-  font-size: 15px;
+  font-size: .9rem;
 }
 
 @media (max-width: 1024px) {
@@ -1196,11 +1199,11 @@
 
 @media (max-width: 800px) {
   .chef-details-text h4 {
-    font-size: 19px;
+    font-size: 1.2rem;
   }
 
   .chef-details-text p {
-    font-size: 14px;
+    font-size: .87rem;
   }
 }
 
@@ -1211,11 +1214,11 @@
   }
 
   .chef-details-text h4 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .chef-details-text p {
-    font-size: 0.8em;
+    font-size: 0.75em;
   }
 }
 
@@ -1233,7 +1236,8 @@
 .gallery-grid {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+  grid-template-columns: repeat(6, 1fr);
+  /* 6 equal columns */
   grid-template-rows: auto;
   padding: 10px;
 }
@@ -1241,7 +1245,7 @@
 .gallery-grid-item {
   position: relative;
   border: 1px solid #000;
-  font-size: 30px;
+  font-size: 1.88rem;
   text-align: center;
   overflow: hidden;
 }
@@ -1299,7 +1303,7 @@
   color: #000;
   border-radius: 50%;
   padding: 5px 10px;
-  font-size: 18px;
+  font-size: 1.125rem;
   cursor: pointer;
   position: absolute;
 }
@@ -1313,7 +1317,7 @@
 }
 
 .lightbox .lb-close:hover {
-  background-color: #000; 
+  background-color: #000;
   color: #fff;
 }
 
@@ -1414,10 +1418,10 @@
 
 .contact-icon i {
   color: #152238;
-  border: 1px solid #152238; 
+  border: 1px solid #152238;
   padding: 15px;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1435,12 +1439,12 @@
 }
 
 .contact-info h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 0;
 }
 
 .contact-info p {
-  font-size: 14px;
+  font-size: .87rem;
 }
 
 .contact-form {
@@ -1478,9 +1482,8 @@
 }
 
 .contact-form .form-group-inline input {
-  width: calc(
-    50% - 10px
-  ); /* Each input takes up half the width with space in between */
+  width: calc(50% - 10px);
+  /* Each input takes up half the width with space in between */
 }
 
 button.contact-btn {
@@ -1488,7 +1491,7 @@ button.contact-btn {
   border: none;
   border-radius: 25px;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 1.12rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -1501,19 +1504,19 @@ button.contact-btn:hover {
 
 @media (max-width: 1024px) {
   .contact-form input {
-    font-size: 14px;
+    font-size: .87rem;
   }
 
   .contact-info-desc h4 {
-    font-size: 18px;
+    font-size: 1.12rem;
   }
 
   .contact-info-desc p {
-    font-size: 13px;
+    font-size: .8rem;
   }
 
   button.contact-btn {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -1539,26 +1542,27 @@ button.contact-btn:hover {
 }
 
 @media (max-width: 500px) {
+
   .contact-form input,
   .contact-form textarea {
-    font-size: 12px;
+    font-size: .75rem;
   }
 
   .contact-icon i {
-    font-size: 14px;
+    font-size: .87rem;
     padding: 10px;
   }
 
   .contact-info-desc h4 {
-    font-size: 14px;
+    font-size: .87rem;
   }
 
   .contact-info-desc p {
-    font-size: 12px;
+    font-size: .75rem;
   }
 
   button.contact-btn {
-    font-size: 12px;
+    font-size: .75rem;
   }
 }
 
@@ -1581,10 +1585,10 @@ button.contact-btn:hover {
 }
 
 .useful-links a,
-.our-services a, 
+.our-services a,
 .footer-info p,
 .our-newsletter p {
-  font-size: 15px;
+  font-size: .9rem;
 }
 
 footer a {
@@ -1602,7 +1606,7 @@ footer a {
   padding: 5px;
   border-radius: 50%;
   background-color: #e6d3b0;
-  font-size: 18px;
+  font-size: .87rem;
   color: #152238;
   margin-bottom: 5px;
 }
@@ -1655,42 +1659,49 @@ footer a {
   }
 
   .footer-addr p {
-    font-size: 15px;
+    font-size: .9rem;
   }
 
   .useful-links a,
   .our-services a,
   .our-newsletter p {
-    font-size: 14px;
+    font-size: .87rem;
   }
 
   .useful-links h4,
   .our-services h4,
   .our-newsletter h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .footer-logo {
-    font-size: 20px;
+    font-size: 1.1rem;
   }
 
   .footer-info h4 {
-    font-size: 13px;
+    font-size: .7rem;
   }
 
-  .footer-info ul a, 
+  .footer-info ul a,
   #footer .our-newsletter p {
-    font-size: 12px;
+    font-size: .6rem;
+  }
+
+  #footer .icon {
+    font-size: 1rem;
+    padding: 3px !important;
+    width: 30px;
+    height: 30px;
   }
 
   .footer-info .footer-addr p {
-    font-size: 12px;
+    font-size: .6rem;
   }
 
   #footer .our-newsletter form input {
-    font-size: 12px;
+    font-size: .6rem;
   }
 
   .our-newsletter .btn {
@@ -1698,7 +1709,38 @@ footer a {
   }
 
   .copyright p {
-    font-size: 11px;
+    font-size: .6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-logo {
+    font-size: 1.25rem;
+  }
+
+  .footer-info h4 {
+    font-size: .8rem;
+  }
+
+  .footer-info ul a,
+  #footer .our-newsletter p {
+    font-size: .75rem;
+  }
+
+  .footer-info .footer-addr p {
+    font-size: .75rem;
+  }
+
+  #footer .our-newsletter form input {
+    font-size: .75rem;
+  }
+
+  .our-newsletter .btn {
+    height: 32px;
+  }
+
+  .copyright p {
+    font-size: .68rem;
   }
 }
 
@@ -1707,14 +1749,15 @@ footer a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none; /* Hide the button initially */
-  background-color: #23034d; /* Bright color for visibility */
+  display: none;
+  background-color: rgb(7, 4, 43);
+  ;
   color: white;
   border: none;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  font-size: 18px;
+  font-size: 1.125rem;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   z-index: 1000;
@@ -1722,6 +1765,5 @@ footer a {
 }
 
 #scrollUpButton:hover {
-  background-color: #e64a19;
-  transform: scale(1.1); /* Slight zoom effect */
+  transform: scale(1.1);
 }
