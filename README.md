@@ -1,4 +1,4 @@
-# 🏖️ The Modern
+# The Modern
 
 A single-page, responsive website for a fictional beach-themed contemporary restaurant — built with HTML5, CSS3, and JavaScript.
 
